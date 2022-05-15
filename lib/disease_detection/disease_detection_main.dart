@@ -166,39 +166,38 @@ class _DiseaseDetectionMainState extends State<DiseaseDetectionMain> {
             bottom: 5,
             right: 4,
             child: FloatingRoundIconButton(
-                icon: Icons.check,
-                onPressed: () async {
-                  if (image == null) {
-                    ScaffoldMessenger.of(context).showSnackBar(kPleaseUpload);
-                    return;
-                  }
-                  setState(() {
-                    _progress = true;
-                  });
-                  dynamic imageEncoded = await image!.readAsBytes();
-                  String finalImage = base64Encode(imageEncoded);
-                  Map<String, String> details = {
-                    "crop": crop,
-                    'image': finalImage,
-                  };
-                  setState(() {
-                    _progress = false;
-                  });
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return DiseaseResponse(
-                          crop: crop,
-                          image: image,
-                          details: details,
-                        );
-                      },
-                    ),
-                  );
+              icon: Icons.check,
+              onPressed: () async {
+                if (image == null) {
+                  ScaffoldMessenger.of(context).showSnackBar(kPleaseUpload);
+                  return;
                 }
-                //},
-                ),
+                setState(() {
+                  _progress = true;
+                });
+                dynamic imageEncoded = await image!.readAsBytes();
+                String finalImage = base64Encode(imageEncoded);
+                Map<String, String> details = {
+                  "crop": crop,
+                  'image': finalImage,
+                };
+                setState(() {
+                  _progress = false;
+                });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DiseaseResponse(
+                        crop: crop,
+                        image: image,
+                        details: details,
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),
