@@ -208,7 +208,7 @@ class BeetleNetworking {
   Future<dynamic> getDetails(Map<String, String> details) async {
     String basicAuth = this.basicAuth(global.username, global.password);
     http.Response response = await http.post(
-      Uri.parse(kDiseaseDetectionBaseURL),
+      Uri.parse('$kDiseaseDetectionBaseURL/analytics/analyse'),
       headers: <String, String>{
         'authorization': basicAuth,
         'Accept': 'application/json'

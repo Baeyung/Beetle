@@ -20,7 +20,7 @@ class RoundIconButton extends StatefulWidget {
 class _RoundIconButtonState extends State<RoundIconButton> {
   double elevation = 0;
   bool itemSelected = false;
-  double? radius = 45;
+  double? radius = 35;
   @override
   Widget build(BuildContext context) {
     return Padding(
