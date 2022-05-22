@@ -20,7 +20,7 @@ class RoundIconButton extends StatefulWidget {
 class _RoundIconButtonState extends State<RoundIconButton> {
   double elevation = 0;
   bool itemSelected = false;
-  double? radius = 45;
+  double? radius = 35;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -33,19 +33,19 @@ class _RoundIconButtonState extends State<RoundIconButton> {
           if (itemSelected) {
             setState(() {
               elevation = 40;
-              radius = 50;
+              radius = 40;
             });
           } else {
             setState(() {
               elevation = 0;
-              radius = 45;
+              radius = 35;
             });
           }
         },
-        fillColor: Colors.orangeAccent,
+        fillColor: Colors.white,
         child: CircleAvatar(
           backgroundImage: AssetImage(widget.icon),
-          backgroundColor: Colors.orangeAccent,
+          backgroundColor: Colors.white,
           radius: radius,
         ),
         shape: const CircleBorder(),

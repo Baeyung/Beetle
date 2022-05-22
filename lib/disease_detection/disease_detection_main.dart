@@ -20,6 +20,7 @@ class DiseaseDetectionMain extends StatefulWidget {
 }
 
 class _DiseaseDetectionMainState extends State<DiseaseDetectionMain> {
+  CropDetails cropDetails = CropDetails();
   XFile? image;
   bool _progress = false;
   String crop = '';
@@ -86,12 +87,13 @@ class _DiseaseDetectionMainState extends State<DiseaseDetectionMain> {
                           return RoundIconButton(
                             index: index,
                             onPressed: (index) {
-                              crop = CropDetails().getCrop(index);
+                              crop = cropDetails.getCrop(index);
                             },
-                            icon: 'assets/images/png_files/wheat.png',
+                            icon:
+                                'assets/images/png_files/${cropDetails.getCrop(index)}.png',
                           );
                         },
-                        itemCount: 10,
+                        itemCount: cropDetails.getCropCount(),
                         scrollDirection: Axis.horizontal,
                       ),
                     ),
@@ -164,48 +166,38 @@ class _DiseaseDetectionMainState extends State<DiseaseDetectionMain> {
             bottom: 5,
             right: 4,
             child: FloatingRoundIconButton(
-                icon: Icons.check,
-                onPressed: () async {
-                  if (image == null) {
-                    ScaffoldMessenger.of(context).showSnackBar(kPleaseUpload);
-                    return;
-                  }
-                  setState(() {
-                    _progress = true;
-                  });
-                  dynamic imageEncoded = await image!.readAsBytes();
-                  String finalImage = base64Encode(imageEncoded);
-                  Map<String, String> details = {
-                    "crop": crop,
-                    'image': finalImage,
-                  };
-
-                  // Response response =
-                  //     await BeetleNetworking().getDetails(details);
-                  // if (response.statusCode == 200) {
-                  //   dynamic x = jsonDecode(
-                  //     utf8.decode(
-                  //       response.bodyBytes,
-                  //     ),
-                  //   );
-                  setState(() {
-                    _progress = false;
-                  });
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return DiseaseResponse(
-                          crop: crop,
-                          image: image,
-                          details: details,
-                        );
-                      },
-                    ),
-                  );
+              icon: Icons.check,
+              onPressed: () async {
+                if (image == null) {
+                  ScaffoldMessenger.of(context).showSnackBar(kPleaseUpload);
+                  return;
                 }
-                //},
-                ),
+                setState(() {
+                  _progress = true;
+                });
+                dynamic imageEncoded = await image!.readAsBytes();
+                String finalImage = base64Encode(imageEncoded);
+                Map<String, String> details = {
+                  "crop": crop,
+                  'image': finalImage,
+                };
+                setState(() {
+                  _progress = false;
+                });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DiseaseResponse(
+                        crop: crop,
+                        image: image,
+                        details: details,
+                      );
+                    },
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),
