@@ -1,6 +1,7 @@
 # **BEETLE**
 ## Final Year Project 2021 - 2022
-###### Abstratct
+###### NOTE: The backend access is till 8TH June 2022 after that the API's would stop working and needs to be redeployed at Microsoft Azure Servers. This means that if you are working on this app it would need mock servers for the changes. The json format for mock servers would be shared on request.
+###### Abstract
 Digital agriculture is on the rise throughout the world aided by many new innovations in the fields of machine learning, 
 internet of things and computer vision. Alongside this, ecommerce, which has been now accepted by the world and is 
 here to stay, is facing a major change with the growth of specialized marketplaces in place of generalized marketplaces 
@@ -12,21 +13,17 @@ There will be three major components of the project:
 
 • Crop advisory through machine learning models:
 
-− Disease detection models for some of the major crops grown in Pakistan.
+    − Disease detection models for some of the major crops grown in Pakistan.
 
-− The modules will provide insight into several different problems that the crop may be facing and suggest 
-
-actions to take against them.
+    − The modules will provide insight into several different problems that the crop may be facing and suggestactions to take against them.
 
 • A discussion forum platform:
 
-− A discussion forum platform customized for the farmers of Pakistan where they can discuss and help 
-each other with the problems that they face regarding their crops and agricultural activities.
+    − A discussion forum platform customized for the farmers of Pakistan where they can discuss and help each other with the problems that they face regarding their crops and agricultural activities.
 
 • A specialized business to consumer ecommerce platform:
 
-− Allow businesses to setup their stores to sell agricultural utilities including but not limited to tools, 
-seeds, fertilizers, pesticides etc.
+    − Allow businesses to setup their stores to sell agricultural utilities including but not limited to tools, seeds, fertilizers, pesticides etc.
 
 The three modules would promote each other among the potential users. This will be done by connecting the three in 
 our use cases. An example would be a case in which a farmer would use our crop advisory to identify a problem. The app 
@@ -37,7 +34,7 @@ forums.
 
 ## Final Result
 ###### Login & Signup Page
-This is where the farmer can login to our platform using email only. Furthermore, he can create a new account to access the platform and also use the functionality to reset his password incase he has forgotten it. This is shown in the videos below.
+This is where the farmer can login to our platform using email only. Furthermore, he can create a new account to access the platform and also use the functionality to reset his password in-case he has forgotten it. This is shown in the videos below.
 
 
 https://user-images.githubusercontent.com/75621461/172355273-0bf786ce-5df7-495a-99f2-c091be6990d9.mp4
@@ -47,7 +44,8 @@ https://user-images.githubusercontent.com/75621461/172355273-0bf786ce-5df7-495a-
 https://user-images.githubusercontent.com/75621461/172355286-7c0efd0e-ab0a-4e03-9c36-76e0c6872e69.mp4
 
 ###### Forum Module
-In this module the user can use the threads the way he like them, this is an alternative to the reddit which is specialized for the farmers only. 
+In this module the user can use the threads the way he like them, this is an alternative to the reddit which is specialized for the farmers only.
+
 Here the user can can create a new thread. 
 
 
@@ -79,7 +77,8 @@ https://user-images.githubusercontent.com/75621461/172357128-91e29d27-d658-43e2-
 ###### E-Commerce Module
 **This module was created by [Delta3241](https://github.com/DeltA3241)**
 In this module the user have the functionality to browse the products select them and add them to the cart. He can also directly buy the products through the cart.
-this is shown in the below recordings.
+
+This is shown in the below recordings.
 
 
 https://user-images.githubusercontent.com/75621461/172357643-90bc038a-4857-4365-a60b-aaf1ca81d883.mp4
@@ -95,18 +94,16 @@ https://user-images.githubusercontent.com/75621461/172357833-c239ef2a-a463-45b3-
 
 ###### Disease Detection Module
 In this module the farmer have the functionality to select the crop from the supported crops list and then upload the image of the diseased plant to obtain the results from the AI models deployed at the backend.
+
 The demo would be uploaded soon.
 
 ## Thanks to
-[Ali Fahad for working on backend](https://github.com/AliFahadKhan)
+[Ali Fahad for working on backend.](https://github.com/AliFahadKhan)
 
+[Ahmad Rehman for working on E-Commerce Module.](https://github.com/DeltA3241)
 
-[Ahmad Rehman for working on E-Commerce Module](https://github.com/DeltA3241)
+[Hammad Javaid For the Disease Detection models.](https://www.linkedin.com/in/hammad-88/)
 
-
-[Hammad Javaid For the Disease Detection models](https://www.linkedin.com/in/hammad-88/)
-
-
-[Anas bin Arif for the Seller POrtal on Web.](https://www.linkedin.com/in/anas-bin-arif-ab6a87124/)
+[Anas bin Arif for the Seller Portal on Web.](https://www.linkedin.com/in/anas-bin-arif-ab6a87124/)
 
 
