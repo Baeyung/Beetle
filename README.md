@@ -5,25 +5,36 @@ Digital agriculture is on the rise throughout the world aided by many new innova
 internet of things and computer vision. Alongside this, ecommerce, which has been now accepted by the world and is 
 here to stay, is facing a major change with the growth of specialized marketplaces in place of generalized marketplaces 
 like amazon.
-The aim of this project is to build a fully sustainable agricultural platform that provides crop advisory mobile/webbased services facilitated by a discussion forum and integrated with a business to consumer ecommerce 
-platform. Every aspect of the app will be built keeping in view the requirements of our major crops and local farmers.
+
+The aim of this project is to build a fully sustainable agricultural platform that provides crop advisory mobile/webbased services facilitated by a discussion forum and integrated with a business to consumer ecommerce platform. Every aspect of the app will be built keeping in view the requirements of our major crops and local farmers.
+
 There will be three major components of the project:
+
 • Crop advisory through machine learning models:
+
 − Disease detection models for some of the major crops grown in Pakistan.
+
 − The modules will provide insight into several different problems that the crop may be facing and suggest 
+
 actions to take against them.
+
 • A discussion forum platform:
+
 − A discussion forum platform customized for the farmers of Pakistan where they can discuss and help 
 each other with the problems that they face regarding their crops and agricultural activities.
+
 • A specialized business to consumer ecommerce platform:
+
 − Allow businesses to setup their stores to sell agricultural utilities including but not limited to tools, 
 seeds, fertilizers, pesticides etc.
+
 The three modules would promote each other among the potential users. This will be done by connecting the three in 
 our use cases. An example would be a case in which a farmer would use our crop advisory to identify a problem. The app 
 would then suggest using some product to overcome the problem. Any instances of this product if available on the 
 ecommerce platform would then be automatically marketed to the user. If the users are unsure of anything or are not 
 satisfied, they can discuss further with other farmers and agricultural experts by browsing through or creating new 
 forums.
+
 ## Final Result
 ###### Login & Signup Page
 This is where the farmer can login to our platform using email only. Furthermore, he can create a new account to access the platform and also use the functionality to reset his password incase he has forgotten it. This is shown in the videos below.
