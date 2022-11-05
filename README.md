@@ -1,6 +1,6 @@
 # **BEETLE**
 ## Final Year Project 2021 - 2022
-###### NOTE: The backend access is till 8TH June 2022 after that the API's would stop working and needs to be redeployed at Microsoft Azure Servers. This means that if you are working on this app it would need mock servers for the changes. The json format for mock servers would be shared on request.
+###### NOTE: The backend access is till 8th June 2022 after that the API's would stop working and needs to be redeployed at Microsoft Azure Servers. This means that if you are working on this app it would need mock servers for the changes. The json format for mock servers would be shared on request.
 ###### Abstract
 Digital agriculture is on the rise throughout the world aided by many new innovations in the fields of machine learning, 
 internet of things and computer vision. Alongside this, ecommerce, which has been now accepted by the world and is 
